@@ -6,19 +6,30 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "typecheck": "tsc",
+    "test": "jest --passWithNoTests --silent --maxWorkers=2 -u"
   },
   "dependencies": {
+    "classnames": "^2.3.1",
+    "dayjs": "^1.11.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.0.1",
+    "@testing-library/user-event": "^14.1.0",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^27.4.1",
     "@types/node": "17.0.23",
-    "@types/react": "18.0.2",
+    "@types/react": "18.0.1",
     "@types/react-dom": "18.0.0",
     "eslint": "8.13.0",
     "eslint-config-next": "12.1.4",
+    "jest": "^27.5.1",
+    "jest-dom": "^4.0.0",
     "typescript": "4.6.3"
   }
 }
